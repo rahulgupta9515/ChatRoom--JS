@@ -54,8 +54,30 @@
         </form>
     </div>
 
-    <script src="chat.js"></script>
-    <script src="ui.js"></script>
-    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBLGw33RevmhUNtg79qJ4r469nUeZtIbwg",
+        authDomain: "chat-room-dce11.firebaseapp.com",
+        databaseURL: "https://chat-room-dce11.firebaseio.com",
+        projectId: "chat-room-dce11",
+        storageBucket: "",
+        messagingSenderId: "821827809290",
+        appId: "1:821827809290:web:bb44cde904f51b97"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    </script>
+
+    <script src="Scripts/chat.js"></script>
+    <script src="Scripts/ui.js"></script>
+    <script src="Scripts/app.js"></script>
 </body>
 </html>
